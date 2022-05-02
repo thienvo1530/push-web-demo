@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sách 1234</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/fontawesome.min.css">
+    <link rel="stylesheet" href="./css/style-story.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+</head>
+<body>
+    <script>
+        var product = [
+        {
+            id: 28,
+            name: 'Cô Gái Đến Từ Hôm Qua',
+            author: 'Nguyễn Nhật Ánh',
+            price: 139000,
+            img:  "https://danviet.mediacdn.vn/thumb_w/650/296231569849192448/2022/4/30/chelsea-02-16512775612291913453497.png"
+        },
+    ]
+    // localStorage.setItem('product', JSON.stringify(product));
+    var product = JSON.parse(localStorage.getItem('product'));
+    var id_product = localStorage.getItem('id');
+
+    var sp = product.find(sp => sp.id_product == id_product)
+
+     $(document).ready(function(){
+            $("#title").html(sp.name)
+            $("#demo").html(sp.img)
+
+        })
+
+    </script>
+
+    <div id="wrapper">
+        <div id="header" class="mb-3">
+            <div class="left-header">
+                <a href="index.html"><img src="./images/logo-3.png" style="width: 70px; position: absolute; top: -15px;" alt="" id="logo"></a>
+                <a href="index.html" class="header-title">VBookStore</a>
+            </div>
+            <div class="center-header">
+                <input type="search" id="search-bar" placeholder="Tìm sách mà bạn muốn....">
+                <label for=""><i class="fa-solid fa-magnifying-glass" id="search-toggle"></i></label> 
+            </div>
+            <div class="left-header">
+                <i class="fa-solid fa-user" id="user-toggle"></i>
+                <i class="fa-solid fa-cart-shopping" id="shopping-toggle"></i>
+            </div>
+        </div>
+        <!-- end header -->
+
+        <ul id="main-menu" class="mb-2">
+            <li><a href="index.html">Trang chủ</a></li>
+            <li><a href="about.html">Giới thiệu</a></li>
+            <li><a href="product.html">Sách</a>
+                <ul class="sub-menu">
+                    <li><a href="culture-book.html">Tư duy - Văn hoá</a></li>
+                    <li><a href="story-book.html">Truyện - Tiểu thuyết</a></li>
+                </ul>
+            </li>
+            <li><a href="register.html">Đăng ký</a></li>
+            <li><a href="sitemap.html">Sitemap</a></li>
+            <li><a href="contact.html">Liên hệ</a></li>
+        </ul>
+        <!-- end menu -->
+
+        <div id="form-login">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h5>Đăng nhập</h5>
+                    <form action="">
+                        <div class="form-group">
+                            <label for="txtusername">Tài khoản</label>
+                            <input type="text" name="txtusername" id="txtusername">
+                        </div>
+                        <div class="form-group">
+                            <label for="txtpass">Mật khẩu</label>
+                            <input type="password" name="txtpass" id="txtpass">
+                        </div>
+                        <div  class="btn-login">
+                            <button type="button">Đăng nhập</button>
+                        </div> 
+                    </form>
+                </div>
+                <!-- end form-login -->
+
+                <div class="container">
+                    <div id="book-product" class="mt-5">
+                        <div class="col-md-12 text-center product-title">
+                             <span class="text-uppercase">c</span>
+                            <span class="text-uppercase">h</span>
+                            <span class="text-uppercase mr-3">i</span>
+                            <span class="text-uppercase">t</span>
+                            <span class="text-uppercase">i</span>
+                            <span class="text-uppercase">ế</span>
+                            <span class="text-uppercase mr-3">t</span>
+                            <span class="text-uppercase">s</span>
+                            <span class="text-uppercase">ả</span>
+                            <span class="text-uppercase mr-3">n</span>
+                            <span class="text-uppercase">p</span>
+                            <span class="text-uppercase">h</span>
+                            <span class="text-uppercase">ẩ</span>
+                            <span class="text-uppercase">m</span>
+                        </div>
+                    <div id="title">
+
+                    </div>
+                    <img src='' id="demo" alt="">
+                    </div>
+                    <!-- end product -->
+
+                <ul class="pagination justify-content-center mt-4">
+                    <li class="page-item"><a href="" class="page-link pre">Previous</a></li>
+                    <li class="page-item active"><a href="" class="page-link" style="background: #ff3838; color: #222f3e;">1</a></li>
+                    <li class="page-item"><a href="" class="page-link">2</a></li>
+                    <li class="page-item"><a href="" class="page-link">3</a></li>
+                    <li class="page-item"><a href="" class="page-link">Next</a></li>
+                </ul>
+
+                <div id="footer">
+                      <div class="box-content">
+                        <h5 class="box-title">Liên kết chính</h5>
+                        <a href="index.html" target="blank"><i class="fa-solid fa-arrow-right"></i> Trang chủ</a>
+                        <a href="about.html" target="blank"><i class="fa-solid fa-arrow-right"></i> Giới thiệu</a>
+                        <a href="register.html" target="blank"><i class="fa-solid fa-arrow-right"></i> Đăng ký</a>
+                        <a href="product.html" target="blank"><i class="fa-solid fa-arrow-right"></i> Sản phẩm</a>
+                        <a href="sitemap.html" target="blank"><i class="fa-solid fa-arrow-right"></i> Sitemap</a>
+                    </div>
+                    <div class="box-content">
+                        <h5>Liên kết phụ</h5>
+                        <a href="culture-book.html" target="blank"><i class="fa-solid fa-arrow-right"></i> Tư duy</a>
+                        <a href="story-book.html" target="blank"><i class="fa-solid fa-arrow-right"></i> Truyện</a>
+                        <a href=""><i class="fa-solid fa-arrow-right"></i> Đăng nhập</a>
+                        <a href=""><i class="fa-solid fa-arrow-right"></i> Giỏ hàng</a>
+                        <a href=""><i class="fa-solid fa-arrow-right"></i> Khác</a>
+                    </div>
+                    <div class="box-content">
+                        <h5>Liên hệ</h5>
+                        <a href=""><i class="fa-solid fa-phone"></i> 1900361888</a>
+                        <a href=""><i class="fa-solid fa-phone"></i> 1808432100</a>
+                        <a href="https://mail.google.com/" target="blank"><i class="fa-solid fa-envelope"></i> Vbookstore@gmail.com</a>
+                        <a href=""><i class="fa-solid fa-location-dot"></i> Lê Đức Thọ, Q.GV, TP.HCM</a>
+                    </div>
+                    <div class="box-content">
+                        <h5>Theo dõi</h5>
+                        <a href="https://www.facebook.com/" target="blank"><i class="fa-brands fa-facebook-f"></i> Facebook</a>
+                        <a href="https://www.tiktok.com/" target="blank"><i class="fa-brands fa-tiktok"></i> Tiktok</a>
+                        <a href="https://www.instagram.com/" target="blank"><i class="fa-brands fa-instagram"></i> Instagram</a>
+                        <a href="https://www.youtube.com/" target="blank"><i class="fa-brands fa-youtube"></i> Youtube</a>
+                    </div>  
+                </div>
+                <!-- end footer -->
+
+                <div class="design-by">
+                        <p>© copyright @ by <span>Nguyễn Thiên Thành Vinh</span></p>
+                </div>
+                </div>          
+    </div>
+</body>
+</html>

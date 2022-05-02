@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang chủ</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/fontawesome.min.css">
+    <link rel="stylesheet" href="./css/style-home.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="header" class="mb-3">
+            <div class="left-header">
+                <a href="index.html"><img src="./images/logo-3.png" style="width: 70px; position: absolute; top: -15px;" alt="" id="logo"></a>
+                <a href="index.html" class="header-title">VBookStore</a>
+            </div>
+            <div class="center-header">
+                <input type="search" id="search-bar" placeholder="Tìm sách mà bạn muốn....">
+                <label for=""><i class="fa-solid fa-magnifying-glass" id="search-toggle"></i></label> 
+            </div>
+            <div class="left-header">
+                <i class="fa-solid fa-user" id="user-toggle"></i>
+                <i class="fa-solid fa-cart-shopping" id="shopping-toggle"></i>
+            </div>
+        </div>
+        <!-- end header -->
+
+        <ul id="main-menu" class="mb-2">
+             <li><a href="index.html">Trang chủ</a></li>
+            <li><a href="about.html">Giới thiệu</a></li>
+            <li><a href="product.html">Sách</a>
+                <ul class="sub-menu">
+                    <li><a href="culture-book.html">Tư duy - Văn hoá</a></li>
+                    <li><a href="story-book.html">Truyện - Tiểu thuyết</a></li>
+                </ul>
+            </li>
+            <li><a href="register.html">Đăng ký</a></li>
+            <li><a href="sitemap.html">Sitemap</a></li>
+            <li><a href="contact.html">Liên hệ</a></li>
+        </ul>
+        <!-- end menu -->
+
+        <div id="form-login">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h5>Đăng nhập</h5>
+                    <form action="">
+                        <div class="form-group">
+                            <label for="txtusername">Tài khoản</label>
+                            <input type="text" name="txtusername" id="txtusername">
+                        </div>
+                        <div class="form-group">
+                            <label for="txtpass">Mật khẩu</label>
+                            <input type="password" name="txtpass" id="txtpass">
+                        </div>
+                        <div  class="btn-login">
+                            <button type="button">Đăng nhập</button>
+                        </div> 
+                    </form>
+                </div>
+                <!-- end form-login -->
+        <div id="discount">
+            <div class="text-discount">
+                <h3>Sản phẩm giám giá 40%</h3>
+                <p>Đây là các sản phẩm nổi bật được giảm giá trong tháng 4</p>
+                <a href="" id="btn-discount">Đặt mua ngay</a>
+            </div>
+        
+        <div class="book-slide">
+            <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><a href=""><img src="./images/book-8.PNG" alt=""></a></div>
+                <div class="swiper-slide"><a href=""><img src="./images/book-9.PNG" alt=""></a></div>
+                <div class="swiper-slide"><a href=""><img src="./images/book-3.PNG" alt=""></a></div>
+                <div class="swiper-slide"><a href=""><img src="./images/book-4.PNG" alt=""></a></div>
+                <div class="swiper-slide"><a href=""><img src="./images/book-5.PNG" alt=""></a></div>
+                <div class="swiper-slide"><a href=""><img src="./images/book-2.PNG" alt=""></a></div>
+            </div>
+            <div class="swiper-pagination"></div>
+            </div>
+        </div> 
+        </div>
+        <!-- end discount -->
+        
+        <div class="container" >
+            <div id="book-product" >
+            <div class="row mt-5">
+                <div class="col-md-12 text-center outstanding">
+                    <span class="text-uppercase">n</span>
+                    <span class="text-uppercase">ổ</span>
+                    <span class="text-uppercase mr-4">i</span>
+                    <span class="text-uppercase">b</span>
+                    <span class="text-uppercase">ậ</span>
+                    <span class="text-uppercase">t</span>
+                </div>
+            </div>
+                <ul class="product-list mt-3">
+                    <li>
+                        <div class="img-box">
+                            <img src="./images/book-4.PNG" alt="">
+                        <a href="" class="addcart">
+                            <i class="fa fa-shopping-cart"></i>
+                        </a>
+                        </div>
+                        <div class="product-name">
+                            <a href="" ><p class="text-center mt-4 mb-0" >Càng Kỷ Luật, Càng Tự Do</p></a> 
+                        </div>
+                        <div class="rate mb-1">
+                            <span><i class="fas fa-star rate-color"></i></span>
+                            <span><i class="fas fa-star rate-color"></i></span>
+                            <span><i class="fas fa-star rate-color"></i></span>
+                            <span><i class="fas fa-star rate-color"></i></span>
+                            <span><i class="fas fa-star rate-color"></i></span>
+                        </div>
+                        <div class="price">
+                             <p class="text-center">99.000đ<span class="old-price">200.000đ</span></p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="img-box">
+                            <img src="./images/book-19.PNG" alt="">
+                        <a href="" class="addcart">
+                            <i class="fa fa-shopping-cart"></i>
+                        </a>
+                        </div>
+                        <div class="product-name">
+                            <a href="" ><p class="text-center mt-4 mb-0" >Lâu Đài Bay Của Pháp Sư Howl</p></a> 
+                        </div>
+                        <div class="rate mb-1">
+                            <span><i class="fas fa-star rate-color"></i></span>
+                            <span><i class="fas fa-star rate-color"></i></span>
+                            <span><i class="fas fa-star rate-color"></i></span>
+                            <span><i class="fas fa-star rate-color"></i></span>
+                            <span><i class="fas fa-star rate-color"></i></span>
+                        </div>
+                        <div class="price">
+                             <p class="text-center">140.000đ<span class="old-price">180.000đ</span></p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="img-box">
+                            <img src="./images/book-20.PNG" alt="">
+                        <a href="" class="addcart">
+                            <i class="fa fa-shopping-cart"></i>
+                        </a>
+                        </div>
+                        <div class="product-name">
+                            <a href="" ><p class="text-center mt-4 mb-0" >Không Giới Hạn - Khám Phá HO'OPONOPONO</p></a> 
+                        </div>
+                        <div class="rate mb-1">
+                            <span><i class="fas fa-star rate-color"></i></span>
+                            <span><i class="fas fa-star rate-color"></i></span>
+                            <span><i class="fas fa-star rate-color"></i></span>
+                            <span><i class="fas fa-star rate-color"></i></span>
+                            <span><i class="far fa-star rate-color"></i></span>
+                        </div>
+                        <div class="price">
+                             <p class="text-center">200.000đ<span class="old-price">400.000đ</span></p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="img-box">
+                            <img src="./images/book-9.PNG" alt="">
+                        <a href="" class="addcart">
+                            <i class="fa fa-shopping-cart"></i>
+                        </a>
+                        </div>
+                        <div class="product-name">
+                            <a href="" ><p class="text-center mt-4 mb-0" >Tâm Lí Học Tích Cực - Phương Thức Sống</p></a> 
+                        </div>
+                        <div class="rate mb-1">
+                            <span><i class="fas fa-star rate-color"></i></span>
+                            <span><i class="fas fa-star rate-color"></i></span>
+                            <span><i class="fas fa-star rate-color"></i></span>
+                            <span><i class="fas fa-star rate-color"></i></span>
+                            <span><i class="fas fa-star rate-color"></i></span>
+                        </div>
+                        <div class="price">
+                             <p class="text-center">79.000đ<span class="old-price">120.000đ</span></p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="img-box">
+                            <img src="./images/book-8.PNG" alt="">
+                        <a href="" class="addcart">
+                            <i class="fa fa-shopping-cart"></i>
+                        </a>
+                        </div>
+                        <div class="product-name">
+                            <a href="" ><p class="text-center mt-4 mb-0" >Đi tìm lẽ sống - Viktor Emil Frankl (Tái bản)</p></a> 
+                        </div>
+                        <div class="rate mb-1">
+                            <span><i class="fas fa-star rate-color"></i></span>
+                            <span><i class="fas fa-star rate-color"></i></span>
+                            <span><i class="fas fa-star rate-color"></i></span>
+                            <span><i class="fas fa-star rate-color"></i></span>
+                            <span><i class="fas fa-star-half rate-color"></i></span>
+                        </div>
+                        <div class="price">
+                             <p class="text-center">59.000đ</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="img-box">
+                            <img src="./images/book-15.PNG" alt="">
+                        <a href="" class="addcart">
+                            <i class="fa fa-shopping-cart"></i>
+                        </a>
+                        </div>
+                        <div class="product-name">
+                            <a href="" ><p class="text-center mt-4 mb-0" >Văn Minh Nước Pháp: Thời Đại Voltaire</p></a> 
+                        </div>
+                        <div class="rate mb-1">
+                            <span><i class="fas fa-star rate-color"></i></span>
+                            <span><i class="fas fa-star rate-color"></i></span>
+                            <span><i class="fas fa-star rate-color"></i></span>
+                            <span><i class="fas fa-star rate-color"></i></span>
+                            <span><i class="fas fa-star-half rate-color"></i></span>
+                        </div>
+                        <div class="price">
+                             <p class="text-center">240.000đ<span class="old-price">350.000đ</span></p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="img-box">
+                            <img src="./images/book-22.PNG" alt="">
+                        <a href="" class="addcart">
+                            <i class="fa fa-shopping-cart"></i>
+                        </a>
+                        </div>
+                        <div class="product-name">
+                            <a href="" ><p class="text-center mt-4 mb-0" >Việt Nam Sử Lược (Bản Đặc Biệt)</p></a> 
+                        </div>
+                        <div class="rate mb-1">
+                            <span><i class="fas fa-star rate-color"></i></span>
+                            <span><i class="fas fa-star rate-color"></i></span>
+                            <span><i class="fas fa-star rate-color"></i></span>
+                            <span><i class="fas fa-star rate-color"></i></span>
+                            <span><i class="fas fa-star rate-color"></i></span>
+                        </div>
+                        <div class="price">
+                             <p class="text-center">189.000đ</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="img-box">
+                            <img src="./images/book-13.PNG" alt="">
+                        <a href="" class="addcart">
+                            <i class="fa fa-shopping-cart"></i>
+                        </a>
+                        </div>
+                        <div class="product-name">
+                            <a href="" ><p class="text-center mt-4 mb-0" >Con Trai Mấy Anh Chơi Game Đỉnh Quá Đi</p></a> 
+                        </div>
+                        <div class="rate mb-1">
+                            <span><i class="fas fa-star rate-color"></i></span>
+                            <span><i class="fas fa-star rate-color"></i></span>
+                            <span><i class="fas fa-star rate-color"></i></span>
+                            <span><i class="fas fa-star rate-color"></i></span>
+                            <span><i class="far fa-star rate-color"></i></span>
+                        </div>
+                        <div class="price">
+                             <p class="text-center">65.000đ<span class="old-price">150.000đ</span></p>
+                        </div>
+                    </li>
+                </ul>        
+            </div>
+            <!-- end book-product -->
+            
+            <div id="about-us">
+                <div class="about-title col-md-12 text-center">
+                    <span class="text-uppercase">v</span>
+                    <span class="text-uppercase mr-4">ề</span>
+                    <span class="text-uppercase">c</span>
+                    <span class="text-uppercase">h</span>
+                    <span class="text-uppercase">ú</span>
+                    <span class="text-uppercase">n</span>
+                    <span class="text-uppercase mr-4">g</span>
+                    <span class="text-uppercase">t</span>
+                    <span class="text-uppercase">ô</span>
+                    <span class="text-uppercase">i</span>
+                </div>
+                <ul id="list-about" class="mt-3">
+                    <li>
+                        <div class="img-about">
+                            <img src="./images/about-2.jpg" alt="">
+                        </div>
+                        <div class="content-about">
+                            <p class="content-title">Đa dạng đầu sách</p>
+                            <p class="content-main">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam deserunt dignissimos voluptatem veritatis at quam unde accusantium officiis? Perspiciatis, repellat!</p>
+                        </div>
+                        <div class="btn-discover">
+                            <button>Khám phá</button>
+                        </div>    
+                    </li>
+                    <li>
+                        <div class="img-about">
+                            <img src="./images/about-1.jpg" style="height: 220px;" alt="">
+                        </div>
+                        <div class="content-about">
+                            <p class="content-title">Đọc sách Online</p>
+                            <p class="content-main">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam deserunt dignissimos voluptatem veritatis at quam unde accusantium officiis? Perspiciatis, repellat!</p>
+                        </div>
+                        <div class="btn-discover">
+                            <button>Khám phá</button>
+                        </div>    
+                    </li>
+                    <li>
+                        <div class="img-about">
+                            <img src="./images/about-3.jpg" alt="">
+                        </div>
+                        <div class="content-about">
+                            <p class="content-title">Giao hàng nhanh chóng</p>
+                            <p class="content-main">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam deserunt dignissimos voluptatem veritatis at quam unde accusantium officiis? Perspiciatis, repellat!</p>
+                        </div>
+                        <div class="btn-discover">
+                            <button>Khám phá</button>
+                        </div>    
+                    </li>
+                </ul>
+            </div>
+            <!-- end about-us -->
+
+            <div id="question" class="mt-5">
+                <div class="question-title text-center">
+                    <span class="text-uppercase">c</span>
+                    <span class="text-uppercase">â</span>
+                    <span class="text-uppercase mr-3">u</span>
+                    <span class="text-uppercase">h</span>
+                    <span class="text-uppercase">ỏ</span>
+                    <span class="text-uppercase mr-3">i</span>
+                    <span class="text-uppercase">t</span>
+                    <span class="text-uppercase">h</span>
+                    <span class="text-uppercase">ư</span>
+                    <span class="text-uppercase">ờ</span>
+                    <span class="text-uppercase">n</span>
+                    <span class="text-uppercase mr-3">g</span>
+                    <span class="text-uppercase">g</span>
+                    <span class="text-uppercase">ặ</span>
+                    <span class="text-uppercase">p</span>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-md-12">
+                        <div class="accordion" id="accordion-faq">
+                            <div class="card">
+                                <div class="card-header">
+                                    <a href="" class="card-link" data-toggle="collapse" data-target="#collapse-1">Tại sao tôi không thể đọc sách online ?</a>
+                                </div>
+                                <div class="collapse show" id="collapse-1" data-parent="#accordion-faq">
+                                    <div class="card-body">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos et, quo iste aut perferendis commodi deleniti labore veritatis dignissimos delectus expedita. Odio sint perferendis at similique neque? Sunt molestiae neque quod adipisci? Eum tempora officia, nostrum rerum dolorum assumenda placeat iure sit pariatur sed praesentium velit cupiditate, labore ratione, laborum aut repellat eos magni illum accusamus omnis. Quidem nemo ab ullam laborum obcaecati debitis facilis.
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end card -->
+                             <div class="card">
+                                <div class="card-header" style="background-color: #222f3e;">
+                                    <a href="" class="card-link" data-toggle="collapse" data-target="#collapse-2">Làm thế nào để tôi có thể thanh toán online ?</a>
+                                </div>
+                                <div class="collapse" id="collapse-2" data-parent="#accordion-faq">
+                                    <div class="card-body">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos et, quo iste aut perferendis commodi deleniti labore veritatis dignissimos delectus expedita. Odio sint perferendis at similique neque? Sunt molestiae neque quod adipisci? Eum tempora officia, nostrum rerum dolorum assumenda placeat iure sit pariatur sed praesentium velit cupiditate, labore ratione, laborum aut repellat eos magni illum accusamus omnis. Quidem nemo ab ullam laborum obcaecati debitis facilis.
+                                    </div>
+                                </div>
+                            </div>
+                             <div class="card">
+                                <div class="card-header">
+                                    <a href="" class="card-link" data-toggle="collapse" data-target="#collapse-3">Quyền lợi mà tôi nhận được khi đăng ký thành viên ?</a>
+                                </div>
+                                <div class="collapse" id="collapse-3" data-parent="#accordion-faq">
+                                    <div class="card-body">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos et, quo iste aut perferendis commodi deleniti labore veritatis dignissimos delectus expedita. Odio sint perferendis at similique neque? Sunt molestiae neque quod adipisci? Eum tempora officia, nostrum rerum dolorum assumenda placeat iure sit pariatur sed praesentium velit cupiditate, labore ratione, laborum aut repellat eos magni illum accusamus omnis. Quidem nemo ab ullam laborum obcaecati debitis facilis.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end question -->
+
+            <div id="footer">
+                   <div class="box-content">
+                        <h5 class="box-title">Liên kết chính</h5>
+                        <a href="index.html" target="blank"><i class="fa-solid fa-arrow-right"></i> Trang chủ</a>
+                        <a href="about.html" target="blank"><i class="fa-solid fa-arrow-right"></i> Giới thiệu</a>
+                        <a href="register.html" target="blank"><i class="fa-solid fa-arrow-right"></i> Đăng ký</a>
+                        <a href="product.html" target="blank"><i class="fa-solid fa-arrow-right"></i> Sản phẩm</a>
+                        <a href="sitemap.html" target="blank"><i class="fa-solid fa-arrow-right"></i> Sitemap</a>
+                    </div>
+                    <div class="box-content">
+                        <h5>Liên kết phụ</h5>
+                        <a href="culture-book.html" target="blank"><i class="fa-solid fa-arrow-right"></i> Tư duy</a>
+                        <a href="story-book.html" target="blank"><i class="fa-solid fa-arrow-right"></i> Truyện</a>
+                        <a href=""><i class="fa-solid fa-arrow-right"></i> Đăng nhập</a>
+                        <a href=""><i class="fa-solid fa-arrow-right"></i> Giỏ hàng</a>
+                        <a href=""><i class="fa-solid fa-arrow-right"></i> Khác</a>
+                    </div>
+                    <div class="box-content">
+                        <h5>Liên hệ</h5>
+                        <a href=""><i class="fa-solid fa-phone"></i> 1900361888</a>
+                        <a href=""><i class="fa-solid fa-phone"></i> 1808432100</a>
+                        <a href="https://mail.google.com/" target="blank"><i class="fa-solid fa-envelope"></i> Vbookstore@gmail.com</a>
+                        <a href=""><i class="fa-solid fa-location-dot"></i> Lê Đức Thọ, Q.GV, TP.HCM</a>
+                    </div>
+                    <div class="box-content">
+                        <h5>Theo dõi</h5>
+                        <a href="https://www.facebook.com/" target="blank"><i class="fa-brands fa-facebook-f"></i> Facebook</a>
+                        <a href="https://www.tiktok.com/" target="blank"><i class="fa-brands fa-tiktok"></i> Tiktok</a>
+                        <a href="https://www.instagram.com/" target="blank"><i class="fa-brands fa-instagram"></i> Instagram</a>
+                        <a href="https://www.youtube.com/" target="blank"><i class="fa-brands fa-youtube"></i> Youtube</a>
+                    </div>  
+                </div>
+                <!-- end footer -->
+
+                <div class="design-by">
+                        <p>© copyright @ by <span>Nguyễn Thiên Thành Vinh</span></p>
+                </div>
+                
+            </div>
+        </div>
+
+</body>
+</html>
+
+
+
+
+
